@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Journal</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Trade Log Journal</h2>
+
+    <!-- Input Form Header -->
+    <div class="input-form">
+      <div class="input-group">
+        <label>Date</label>
+        <input type="date" id="date" />
+      </div>
+      <div class="input-group">
+        <label>Day</label>
+        <input type="text" id="day" placeholder="Day" />
+      </div>
+      <div class="input-group">
+        <label>Time</label>
+        <input type="time" id="time" />
+      </div>
+      <div class="input-group">
+        <label>EntryTime</label>
+        <input type="time" id="entrytime" />
+      </div>
+      <div class="input-group">
+        <label>Band</label>
+        <input type="text" id="band" placeholder="Band" />
+      </div>
+      <div class="input-group">
+        <label>Rsi</label>
+        <input type="text" id="rsi" placeholder="Rsi" />
+      </div>
+      <div class="input-group">
+        <label>SL</label>
+        <input type="text" id="sl" placeholder="SL" />
+      </div>
+      <div class="input-group">
+        <label>TargetUnreached</label>
+        <input type="text" id="targetUnreached" placeholder="Unreached" />
+      </div>
+      <div class="input-group">
+        <label>Target</label>
+        <input type="text" id="target" placeholder="Target" />
+      </div>
+      <div class="input-group btn-group">
+        <button id="btn">Add Trade</button>
+      </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>EntryTime</th>
+            <th>Band</th>
+            <th>Rsi</th>
+            <th>Sl</th>
+            <th>TargetUnreached</th>
+            <th>Target</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Dynamic JavaScript Data Rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
